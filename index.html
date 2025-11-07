@@ -1,11 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Housemood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      margin: 0;
+      color: white;
+      font-family: Arial;
+    }
+
+    .hero {
+      background-image: url('assets/hero/hero.avif');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .texte-principal {
+      max-width: 600px;
+      margin-top: 100px;
+    }
+  </style>
 </head>
 <body>
-    
+  <header class="header">
+    <a class="logo" href="#">
+      <img src="assets/logo.svg" alt="HOUSEMOOD" />
+    </a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section class="hero" role="img" aria-label="Intérieur moderne en bois clair">
+    <nav class="menu">
+      <a href="#">Accueil</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="texte-principal">
+      <h1>Your House is the place of mood</h1>
+      <p>Tech Specifications
+Design Project
+3D visualisation</p>
+    </div>
+  </section>
+
+  <script>
+  </script>
 </body>
 </html>
